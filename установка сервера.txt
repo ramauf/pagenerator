@@ -1,0 +1,19 @@
+apt-get update && apt-get dist-upgrade
+apt-get install apache2
+apt-get install nano
+nano /etc/apt/sources.list
+Добавьте в конец файла две строки:
+deb http://packages.dotdeb.org jessie all
+deb-src http://packages.dotdeb.org jessie all
+apt-get install ca-certificates
+wget https://www.dotdeb.org/dotdeb.gpg
+apt-key add dotdeb.gpg
+apt-get update
+apt-get install php7.0 php-pear libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-json php7.0-redis php7.0-gd php7-gettext php7.0-mcrypt
+
+chmod 0777 /var/lib/php/sessions
+
+
+apt-get install phpmyadmin
+
+service apache2 restart
