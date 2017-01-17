@@ -119,7 +119,8 @@
         <div class="row">
             @include($subTemplate)
         </div>
-        <br /><br />
+        <br />
+        <br />
     </div>
 </div>
 <script src="/adm/bower_components/jquery/dist/jquery.min.js"></script>
